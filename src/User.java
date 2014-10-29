@@ -4,6 +4,7 @@ public class User {
 	private String surname;
 	private int age;
 
+//constructor
 	public User(int id, String name, String surname, int age){
 		this.id = id;
 		this.name = name;
