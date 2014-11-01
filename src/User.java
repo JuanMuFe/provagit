@@ -4,7 +4,7 @@ public class User {
 	private String surname;
 	private int age;
 
-//constructor
+//constructor comment changed to do the second commit
 	public User(int id, String name, String surname, int age){
 		this.id = id;
 		this.name = name;
