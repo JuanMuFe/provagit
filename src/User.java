@@ -4,12 +4,18 @@ public class User {
 	private String surname;
 	private int age;
 
-//constructor
+	//constructor
 	public User(int id, String name, String surname, int age){
 		this.id = id;
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
+	}
+	
+	//getters
+
+	public void setId(int id) {
+	    this.id = id;
 	}
 
 	public String getName() {
@@ -24,6 +30,7 @@ public class User {
 	    return this.age;
 	}
 
+	//setters
 	public void setName(String name) {
 	    this.name = name;
 	}
@@ -37,10 +44,6 @@ public class User {
 	}
 	public int getId() {
 	    return this.id;
-	}
-
-	public void setId(int id) {
-	    this.id = id;
 	}
 
 	public String toString(){
