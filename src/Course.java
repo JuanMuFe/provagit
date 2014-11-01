@@ -3,6 +3,7 @@ public class Course{
 	private int id;
 	private String nameGroup;
 
+	//constructor comentari to save a new commit
 	public Course(int id, String nameGroup){
 		this.id= id;
 		this.nameGroup= nameGroup;		
