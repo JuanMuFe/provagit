@@ -8,7 +8,7 @@ public class MainApp {
 	 * Main function
 	 * @param args
 	 */
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
 		int option = showMenu();
 		while(option != 0){
 			switch(option){
@@ -32,7 +32,7 @@ public class MainApp {
 						}
 					}while(readingError);
 					break;
-				case 3:
+				case 3: deleteUser();
 					break;
 				case 0:
 					break;
@@ -106,6 +106,13 @@ public class MainApp {
 		user.setSurname(newOne.getSurname());
 		user.setAge(newOne.getAge());
 		System.out.println("Changes done!");
+	}
+	
+	public static void deleteUser() throws Exception{
+		BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("Write the id of use to remove");
+		int id= Integer.parseInt(buffer.readLine());
 	}
 
 }
